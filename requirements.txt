@@ -1,0 +1,31 @@
+# Core ML
+torch>=2.0.0
+torchvision>=0.15.0
+open-clip-torch>=2.20.0
+transformers>=4.35.0
+
+# Vector Search
+faiss-cpu>=1.7.4
+
+# API
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# Frontend
+streamlit>=1.28.0
+
+# Data
+numpy>=1.24.0
+Pillow>=10.0.0
+tqdm>=4.65.0
+
+# RAG / LLM
+groq>=0.4.0
+ollama>=0.1.7
+
+# Utils
+pydantic>=2.4.0
+python-dotenv>=1.0.0
+aiofiles>=23.2.1
+httpx>=0.25.0
