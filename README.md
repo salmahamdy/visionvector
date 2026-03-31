@@ -244,17 +244,3 @@ git push
 
 > ⚠️ If `.env` was ever pushed with a real API key, **rotate that key immediately** — git history is public and permanent even after deletion.
 
----
-
-### What gets committed vs ignored
-
-| Path | Committed? | Reason |
-|---|---|---|
-| `core/`, `api/`, `frontend/`, `utils/` | ✅ Yes | Source code |
-| `.env.example` | ✅ Yes | Safe template |
-| `README.md`, `requirements.txt`, `.gitignore` | ✅ Yes | Project essentials |
-| `data/images/.gitkeep` | ✅ Yes | Keeps directory in git |
-| `.env` | ❌ No | Contains secrets |
-| `embeddings/*.npy` | ❌ No | Large generated files |
-| `index/*.faiss` | ❌ No | Large generated files |
-| `__pycache__/` | ❌ No | Python bytecode |
