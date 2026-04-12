@@ -166,12 +166,6 @@ curl -X POST http://localhost:8000/explain \
 2. `ollama pull llama3`
 3. Set `LLM_BACKEND=ollama` in `.env`
 
-## Performance Notes
-
-- Batch size: 32 images/batch (increase on GPU)
-- `torch.no_grad()` used throughout inference
-- GPU auto-detected via `torch.cuda.is_available()`
-- Search results cached with 5-minute TTL
 - IVF index ~10x faster than flat for large collections (>10k images)
 - Re-ranking adds exact cosine pass on top-K only (cheap)
 
