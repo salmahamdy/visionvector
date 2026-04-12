@@ -1,6 +1,5 @@
 # Multimodal Image Search System
 
-Production-ready image search upgraded from OpenAI CLIP + Faiss into a full multimodal pipeline.
 
 ## Architecture
 
